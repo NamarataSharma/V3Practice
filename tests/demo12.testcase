@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testCase guid="f702887b-9e6b-47e6-a262-1f9625cd539b">
+  <summary/>
+  <steps>
+    <apiCall apiId="com.provar.plugins.bundled.apis.control.Break" guid="92e62c4c-ba21-4c00-9b16-73e9f1bd2dbb" name="Break" testItemId="1" title="Break"/>
+  </steps>
+</testCase>
