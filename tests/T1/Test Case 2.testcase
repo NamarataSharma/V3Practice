@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testCase guid="ba914b38-0316-4379-bc0d-240bd82afcca">
+  <summary/>
+  <steps>
+    <apiCall apiId="com.provar.plugins.bundled.apis.control.Sleep" guid="b0758abc-1aa7-43db-9a07-f3bf220478c2" name="Sleep" testItemId="1" title="Sleep for {6} seconds">
+      <arguments>
+        <argument id="sleepSecs">
+          <value class="value" valueClass="decimal">6</value>
+        </argument>
+      </arguments>
+    </apiCall>
+  </steps>
+</testCase>
