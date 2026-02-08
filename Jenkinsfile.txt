@@ -19,8 +19,8 @@ pipeline {
         stage('Run Provar Tests') {
             steps {
                 dir('Demo') {
-                    bat 'ant -f ANT/build.xml'
-                }
+    bat 'ant -f ANT/build.xml'
+}
             }
         }
     }
