@@ -2,8 +2,8 @@ pipeline {
     agent any
 
     tools {
-        jdk 'JDK11'
-        ant 'Ant'
+        jdk 'JAVA_HOME'
+        ant 'ANT'
     }
 
     stages {
