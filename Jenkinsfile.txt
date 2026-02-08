@@ -2,8 +2,8 @@ pipeline {
     agent any
 
     tools {
-        jdk 'JAVA_HOME'
-        ant 'ANT'
+        jdk 'JDK'
+        maven 'Maven'
     }
 
     stages {
@@ -11,24 +11,23 @@ pipeline {
         stage('Checkout Code') {
             steps {
                 git branch: 'master',
-                    credentialsId: 'github-creds',
+                    credentialsId: 'gmail',
                     url: 'https://github.com/NamarataSharma/V3Practice.git'
             }
         }
 
         stage('Run Provar Tests') {
-    steps {
-        dir('Demo') {
-            bat 'ant -f ANT/build.xml'
-        }
-    }
-}
+            steps {
+                dir('Demo') {
+                    bat 'ant -f ANT/build.xml'
+                }
+            }
         }
     }
 
     post {
         always {
-            junit allowEmptyResults: true, testResults: 'ANT/Results/*.xml'
+            junit '**/ANT/reports/*.xml'
         }
     }
 }
